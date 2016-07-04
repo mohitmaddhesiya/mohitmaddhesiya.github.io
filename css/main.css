@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:400,600,700,800,300);
+body{
+    font-family: 'Khula', sans-serif;
+}
+
+.landing-wrapper .center-img
+{
+    width: 100%;
+    /* height: 100%; */
+    /* background-size: contain; */
+  /*  background: url(img/landing8x4.jpg);*/
+    /* position: absolute; */
+    /* left: 0; */
+}
+
+.logo-svg-wrapper
+{
+    position: fixed;
+    top: 40px;
+    width: 100px;
+    margin: 0 0;
+    cursor: pointer;
+    transform: translateY(-40%);
+}
+
+.landing-wrapper{
+	overflow: hidden;
+	 height: 100vh;
+	 position: absolute;
+}
+
+.logo-shape
+{
+    transition: stroke-dashoffset .5s, stroke-dasharray .5s;
+    stroke-dasharray: 40 540;
+    stroke-dashoffset: -474;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #fff;
+}
+.logo
+{
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 25px;
+    position: relative;
+    top: -48px;
+    letter-spacing: 2px;
+    color:0000;
+}
+.name-wrapper
+{
+    position: absolute;
+    height: 300px;
+    height: 100px;
+    right: 5%;
+    top: 50%;
+ /*   margin: 0;
+     padding-top: 20%; 
+    margin-left: 59%;*/
+    /* border-image: url('/img/frame.png'); */
+    cursor: default;
+    text-align: center;
+    color: #fff;
+}
+.name-wrapper .frame
+{
+    z-index: 9999;
+    width: 300px;
+    height: 170px;
+/*    margin-top: 50%;*/
+    /* position: absolute; */
+    /* margin-left: 50%; */
+}
+.full-height-container
+{
+    width: auto;
+    min-height: 200px;
+    min-height: 100vh;
+    border-top: none;
+    background: url('../img/landing.JPG');
+    background-size: cover;
+
+    /* padding-bottom: 0%; */
+}
+.landing
+{
+    margin-top: 0;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    border: none;
+    /*background-image: url('img/landing169.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-wrapper
+{
+    position: absolute;
+    margin: 6% 12%;
+    /* float: left; */
+    /* width: 81%; */
+}
+#two .heading:hover
+{
+   /* transform: scale(1.5);
+*/}
+.full-height-container .heading,
+.gallery .heading,
+.contact .heading
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 43px;
+    width: 55%;
+    text-align: right;
+    padding-right: 26px;
+    cursor: default;
+    transition: all .2s ease-in-out;
+    color: #606060;
+    border-right: 2px solid;
+    text-shadow: 1px 1px 3px #000;
+}
+.about-height-container .heading {
+    font-family: 'Khula', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 43px;
+    width: 55%;
+    padding-right: 26px;
+    cursor: default;
+    transition: all .2s ease-in-out;
+    color: #fff;
+    border-right: 2px solid;
+    text-shadow: 1px 1px 3px #666;
+}
+p.short-story {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    word-spacing: 3px;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+p.about-line{
+    font-size: 18px;
+    color:#999;
+}
+.about-height-container
+{
+    padding-top: 100px;
+    width: 100%;
+    /* height: 160vh; */
+    /* height: 200px; */
+    /* height: auto; */
+    min-height: 25vh;
+    /* margin: 0; */
+    padding-bottom: 80px;
+    /*padding: 0;*/
+    border-top: none;
+    background: #4ecac2;
+    /* padding-bottom: 0%; */
+}
+.exprenence
+{
+    width: 100%;
+    height: 160vh;
+    height: 200px;
+    height: auto;
+    min-height: 50vh;
+    background: #9b59b6 !important;
+    color: #fff;
+    /*padding: 40px 0;*/
+}
+/*.custom-back{
+    background: red;
+    padding-bottom: 20px;
+    height: 440px; 
+}*/
+.flototer
+{
+    padding: 35px 0;
+    width: 100%;
+    height: 160vh;
+    height: 200px;
+    height: auto;
+    min-height: 30vh;
+    float: left;
+    color: #000;
+    background-image: url("/home/crisp/mywebsite/mohitmaddhesiya.github.io/img/flooter.jpg");
+}
+
+/*@media all and (orientation: portrait)
+{
+    .full-height-container
+    {
+        min-height: 68vw;
+    }
+}*/
+
+.date {
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2em;
+    -webkit-transition: all 0.35s ease-in-out;
+
+}
+.Qualification_pro{
+  /*  padding-top: 70px;
+    padding-bottom: 70px;*/
+
+}
+.ulqualificaton_pro{
+    padding-left: 0px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    word-spacing: 3px;
+        font-style: italic;
+    line-height: 1;
+}
+.ulqualificaton_pro li{
+    font-size: 22px;
+}
+.device{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    float: left;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+.clearfix1{
+    float: left;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+.clearfix2{
+    float: left;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+.clearfix3{
+    float: left;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+.padding-top {
+    text-align: center;
+}
+.padding-top b{
+    color:linen;
+}
+.custom-heading{
+    font-weight: bold;
+    color:linen;
+}
+
+/*ipad styling*/
+@media screen and (min-width: 960px) {
+    
+}
+
+/*mobile styling*/
+
+@media screen and (max-width: 767px) {
+    .flototer,
+    .exprenence,
+    .about-height-containerfull-height-container,
+    .full-height-container,
+    .heading{
+        text-align: center;
+    }
+    .about-height-container .heading {
+    width: 100%;
+       border-right: none;
+    }
+
+    p.about-line,p.short-story {
+        text-align: center;
+    }
+    .c100 {
+    float: none !important;
+}
+.c100 {
+        margin: 0 auto !important;
+    }
+.clearfix,
+.clearfix1,
+.clearfix2,
+.clearfix3{
+    width:50%;
+        padding-left: 0;
+            padding-top: 30px;
+
+}
+.Qualification_pro {
+    padding: 0  0 30px 0;
+}
+.padding-top b {
+    color: linen;
+    margin-top: 10px;
+    display: inline-block;
+}
+.full-height-container {
+    background: url('../img/landing.JPG') center center /cover;
+}
+/*.custom-back{
+    background: red;
+    padding-bottom: 20px;
+}*/
+}
+
+@media screen and (max-width: 480px) {
+.clearfix,
+.clearfix1,
+.clearfix2,
+.clearfix3{
+    width:100%;
+
+}
+/*.custom-back{
+    background: red;
+    padding-bottom: 20px;
+    height: 440px; 
+}*/
+}
+
