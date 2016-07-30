@@ -12,6 +12,11 @@ body{
     /* position: absolute; */
     /* left: 0; */
 }
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
 
 .logo-svg-wrapper
 {
@@ -34,9 +39,9 @@ body{
     transition: stroke-dashoffset .5s, stroke-dasharray .5s;
     stroke-dasharray: 40 540;
     stroke-dashoffset: -474;
-    stroke-width: 3px;
+    stroke-width: 5px;
     fill: transparent;
-    stroke: #fff;
+    stroke:rgb(0,0,0);
 }
 .logo
 {
@@ -44,9 +49,16 @@ body{
     font-size: 22px;
     line-height: 25px;
     position: relative;
-    top: -48px;
+    top: -55px;
+   text-align: center;
     letter-spacing: 2px;
     color:0000;
+}
+.logo-svg-wrapper:hover .logo-shape
+{
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
 }
 .name-wrapper
 {
