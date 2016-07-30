@@ -187,7 +187,7 @@ p.about-line{
     min-height: 30vh;
     float: left;
     color: #000;
-    background-image: url("/home/crisp/mywebsite/mohitmaddhesiya.github.io/img/flooter.jpg");
+    background-image: url("../img/flooter.jpg");
 }
 
 /*@media all and (orientation: portrait)

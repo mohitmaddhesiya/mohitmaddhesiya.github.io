@@ -9,21 +9,54 @@
     <style type="text/css">
 .row{ margin: 0 !important;}
     </style>
+
+    <style>
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('./img/Preloader_2.gif') center no-repeat #fff;
+}
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+  //paste this code under head tag or in a seperate js file.
+  // Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
 </head>
 <body>
-    <!-- first page -->
+    <div class="se-pre-con">
+   </div>
+  <!-- Ends -->
+  
+  <div class="content">
+        <!-- first page -->
     <div class="full-height-container landing" id="one">
 
       <div class="device">
       <!--     <div class="landing-wrapper">
             <img src="img/landing.JPG" class="center-img">
         </div> -->
-        <div class="logo-svg-wrapper">
-          <a href="#Top">
-            <svg height="60" width="100" xmlns="http://www.w3.org/2000/svg">
+          <div class="logo-svg-wrapper">
+            <a href="#top">
+                <svg height="60" width="100" xmlns="http://www.w3.org/2000/svg">
                     <rect class="logo-shape" height="60" width="100" />
                     <div class="logo">MM</div>
-          </a>
+            </a>
+            </svg>
         </div>
         <div class='name-wrapper'>
             <img src="img/frame.png" class="frame">
@@ -184,6 +217,10 @@
   </div>
    
 </footer>
+  </div>
+
 </body>
+</body>
+
 </html>
 
