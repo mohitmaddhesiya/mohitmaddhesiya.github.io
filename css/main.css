@@ -1,8 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Khula:400,600,700,800,300);
+@import url(https://fonts.googleapis.com/css?family=Acme:400,600,700,800,300);
 body{
-    font-family: 'Khula', sans-serif;
+    /*font-family: 'Acme', sans-serif;*/
+	font-family: 'Acme', sans-serif;
 }
-
+.navbar-nav{
+	float:right!important;
+}
+.navbar{
+    margin-bottom: 0!important;
+}
 .landing-wrapper .center-img
 {
     width: 100%;
@@ -26,6 +32,7 @@ a
     margin: 0 0;
     cursor: pointer;
     transform: translateY(-40%);
+	z-index:1000;
 }
 
 .landing-wrapper{
@@ -45,11 +52,11 @@ a
 }
 .logo
 {
-    font-family: 'Roboto Condensed';
+    font-family: 'Acme';
     font-size: 22px;
     line-height: 25px;
     position: relative;
-    top: -55px;
+    top: -65px;
    text-align: center;
     letter-spacing: 2px;
     color:0000;
@@ -66,7 +73,7 @@ a
     height: 300px;
     height: 100px;
     right: 5%;
-    top: 50%;
+    top: 40%;
  /*   margin: 0;
      padding-top: 20%; 
     margin-left: 59%;*/
@@ -78,9 +85,9 @@ a
 .name-wrapper .frame
 {
     z-index: 9999;
-    width: 300px;
+    width: 280px;
     height: 170px;
-/*    margin-top: 50%;*/
+    margin-top: 30%;
     /* position: absolute; */
     /* margin-left: 50%; */
 }
@@ -132,7 +139,7 @@ a
 .gallery .heading,
 .contact .heading
 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Acme', sans-serif;
     font-size: 40px;
     font-weight: 500;
     line-height: 43px;
@@ -146,7 +153,7 @@ a
     text-shadow: 1px 1px 3px #000;
 }
 .about-height-container .heading {
-    font-family: 'Khula', sans-serif;
+    font-family: 'Acme', sans-serif;
     font-size: 40px;
     font-weight: bold;
     line-height: 43px;
@@ -159,8 +166,8 @@ a
     text-shadow: 1px 1px 3px #666;
 }
 p.short-story {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Acme', sans-serif;
+    font-size: 15px;
     line-height: 24px;
     word-spacing: 3px;
     color: #fff;
@@ -239,8 +246,8 @@ p.about-line{
 .ulqualificaton_pro{
     padding-left: 0px;
     list-style: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Acme', sans-serif;
+    font-size: 15px;
     word-spacing: 3px;
         font-style: italic;
     line-height: 1;
@@ -280,6 +287,7 @@ p.about-line{
     color:linen;
 }
 .custom-heading{
+    margin-bottom: 67px;
     font-weight: bold;
     color:linen;
 }
@@ -292,6 +300,33 @@ p.about-line{
 /*mobile styling*/
 
 @media screen and (max-width: 767px) {
+
+.name-wrapper .frame {
+    width: 210px!important;
+    height: 120px!important;
+}
+
+.custom-title {
+    margin-top: 20px!important;
+    }
+
+	.navbar-nav{
+	float:none!important;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #222!important;
+}
+.logo {
+    top: -68px!important;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    /* background-color: #ddd; */
+    background-color: transparent!important;
+}
+.navbar-toggle {
+    border: 0px solid transparent!important;
+}
+	
     .flototer,
     .exprenence,
     .about-height-containerfull-height-container,
@@ -347,6 +382,11 @@ p.about-line{
     width:100%;
 
 }
+.custom-title{
+    position: static;
+    font-weight:bold;
+    text-align: center;
+}
 /*.custom-back{
     background: red;
     padding-bottom: 20px;
@@ -354,3 +394,66 @@ p.about-line{
 }*/
 }
 
+/*add new style 7/08/16*/
+.custom-title{
+    margin-top:15px;
+    margin-left:0px; 
+    position: static;
+	font-weight:bold;
+}
+nav.navbar.navbar-default {
+    background: #080909;
+    border-color: #080909!important;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-default {
+    background-color: #080909;
+    border-color: #080909 !important;
+	border-radius:0!important;
+}
+.logo-shape {
+    stroke: #fff!important;
+}
+.logo-svg-wrapper {
+    top: 8%!important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff!important;
+    background-color: #222!important;
+}
+
+.customSection2,
+.customSection3,
+.customSection4{
+	padding:6% 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+a {
+     color: #fff; 
+    text-decoration: none;
+}
+.bgcolor{
+   background-color: #E9967A!important; 
+   /*opacity: 0.6;*/
+   color: #fff;
+       font-family: 'Acme', sans-serif;
+    font-size: 15px;
+    word-spacing: 2px;
+}
+.bold{
+    font-weight: bold;
+	text-shadow: 0 0 2px #302c2c;
+}
+
+.customSection3.bgcolor .row {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.customSection3.bgcolor .row:last-child {
+    border-bottom: 0px solid #ccc;
+}
