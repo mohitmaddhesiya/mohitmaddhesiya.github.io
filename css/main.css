@@ -9,6 +9,15 @@ body{
 .navbar{
     margin-bottom: 0!important;
 }
+<<<<<<< HEAD
+=======
+.navbar-nav{
+	float:right!important;
+}
+.navbar{
+    margin-bottom: 0!important;
+}
+>>>>>>> 8705a36e8bb2485f4b314489826235916fe46947
 .landing-wrapper .center-img
 {
     width: 100%;
@@ -440,13 +449,21 @@ a {
    background-color: #E9967A!important; 
    /*opacity: 0.6;*/
    color: #fff;
+<<<<<<< HEAD
        font-family: 'Acme', sans-serif;
     font-size: 15px;
+=======
+       font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+>>>>>>> 8705a36e8bb2485f4b314489826235916fe46947
     word-spacing: 2px;
 }
 .bold{
     font-weight: bold;
+<<<<<<< HEAD
 	text-shadow: 0 0 2px #302c2c;
+=======
+>>>>>>> 8705a36e8bb2485f4b314489826235916fe46947
 }
 
 .customSection3.bgcolor .row {
