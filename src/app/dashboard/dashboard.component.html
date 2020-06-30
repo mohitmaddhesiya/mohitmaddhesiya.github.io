@@ -1,0 +1,31 @@
+<div style="height: 90%;">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+
+      </button>
+      <span (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <a href="#" mat-button>Admin</a>
+        <a href="#" mat-button>Profiles</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        <a (click)="routeChange('bar')" mat-list-item>Bar Chart</a>
+        <a  (click)="routeChange('line')" mat-list-item>Line Chart</a>
+       </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content style="display: contents;">
+
+      <router-outlet></router-outlet>
+
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

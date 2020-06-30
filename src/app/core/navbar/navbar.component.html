@@ -1,0 +1,39 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark indigo scrolling-navbar intro-fixed-nav" [containerInside]="false">
+  <mdb-navbar-brand (click)="onClickHome()">
+      <a class="logo navbar-brand"><strong>Navbar</strong></a>
+  </mdb-navbar-brand>
+  <links>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active waves-light" mdbWavesEffect (click)="onClickHome()">
+              <a class="nav-link" >Home</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link">Events</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link">Team Profile</a>
+          </li>
+          <li class="nav-item dropdown" dropdown>
+            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Teams<span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                <a class="dropdown-item waves-light" mdbWavesEffect>Profiles</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect>Macthes</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect>Ranks</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item waves-light" mdbWavesEffect>Awards</a>
+            </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav" style="width: 150px;">
+        <li class="nav-item" mdbWavesEffect (click)="openDialog()">
+          <a class="nav-link border border-light rounded waves-effect mr-2" data-toggle="modal" data-target="#modalLoginForm" target="_blank">
+            <mat-icon style="font-size: 16px;">perm_identity</mat-icon>
+            <span>login</span>
+          </a>
+      </li>
+      </ul>
+  </links>
+</mdb-navbar>
+
+

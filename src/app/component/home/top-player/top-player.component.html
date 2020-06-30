@@ -1,0 +1,153 @@
+<div class="bodyUrl">
+  <div style="margin-left: 5rem;padding-top: 5rem;">
+    <div class="row">
+      <div class="col-2">
+        <div class="player_sttaics">
+          <h1 class="text">Player Statistics</h1>
+        </div>
+        <div>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button mdbBtn type="button" color="info" class="waves-light" mdbWavesEffect rounded="true"
+              (click)="showPreviousImage()">
+              <mdb-icon fas icon="bolt"></mdb-icon>Pre
+            </button>
+            <button mdbBtn type="button" color="info" class="waves-light" mdbWavesEffect rounded="true"
+              (click)="showNextImage()">
+              <mdb-icon fas icon="bolt"></mdb-icon>Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-10" >
+        <div class="row" *ngFor="let item of members;let i = index">
+          <div class="col-3 avatar mx-auto" *ngIf="i == counter">
+            <img src="{{item.image}}" style="height: 250px;
+            width: 250px;" class="rounded-0">
+            <span class="player_number">
+              1
+            </span>
+          </div>
+          <div class="col-7" *ngIf="i == counter">
+            <div class="row">
+              <div
+                style="text-align: center;font-size: 24px;line-height: 29px;text-transform: uppercase;font-weight: 900;">
+                <span> {{item.name}}</span>
+              </div>
+            </div>
+            <div class="row" style="padding-top: 1rem;">
+              <div>
+                <span class="headerStyle">Entry Fragger</span>
+                <ul class="list-group text_style">
+                  <li class="list-group-item list-group-item-warning black_theme" style="width: 17rem;">
+                    <div class="row black_theme">
+                      <div class="col-6" style="text-align: left;">
+                        Hieght
+                      </div>
+                      <div class="col-6" style="text-align: end;">
+                        5'cm
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-warning white_theme" style="width: 17rem;">
+                    <div class="row">
+                      <div class="col-6" style="text-align: left;">
+                        Weight
+                      </div>
+                      <div class="col-6" style="text-align: end;">
+                        75 kG
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-warning black_theme" style="width: 17rem;">
+                    <div class="row">
+                      <div class="col-6" style="text-align: left;">
+                        Age
+                      </div>
+                      <div class="col-6" style="text-align: end;">
+                        32
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-warning white_theme" style="width: 17rem;">
+                    <div>
+                      <div class="row">
+                        <div class="col-6" style="text-align: left;">
+                          country
+                        </div>
+                        <div class="col-6" style="text-align: end;">
+                          India
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div style="margin-left: 5rem;">
+                <span class="headerStyle">Quick stats</span>
+                <ul class="list-group text_style">
+                  <li class="list-group-item list-group-item-warning black_theme" style="width: 17rem;">
+                    <div class="row black_theme">
+                      <div class="col-6" style="text-align: left;">
+                        PTS
+                      </div>
+                      <div class="col-6" style="text-align: end;">
+                        10
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-warning white_theme" style="width: 17rem;">
+                    <div class="row">
+                      <div class="col-6" style="text-align: left;">
+                        PTC
+                      </div>
+                      <div class="col-6" style="text-align: end;">
+                        1
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-warning black_theme" style="width: 17rem;">
+                    <div>
+                      <div class="row">
+                        <div class="col-6" style="text-align: left;">
+                          BS
+                        </div>
+                        <div class="col-6" style="text-align: end;">
+                          3
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-warning white_theme" style="width: 17rem;">
+                    <div>
+                      <div class="row">
+                        <div class="col-6" style="text-align: left;">
+                          AS
+                        </div>
+                        <div class="col-6" style="text-align: end;">
+                          3
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-warning black_theme" style="width: 17rem;">
+                    <div>
+                      <div class="row">
+                        <div class="col-6" style="text-align: left;">
+                          PPG
+                        </div>
+                        <div class="col-6" style="text-align: end;">
+                          3
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

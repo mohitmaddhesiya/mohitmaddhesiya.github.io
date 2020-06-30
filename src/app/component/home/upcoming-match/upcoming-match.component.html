@@ -1,0 +1,93 @@
+<div >
+  <div style="text-align: center;">
+    <button mat-mini-fab  color="default" aria-label="Example icon button with a home icon">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+      <span style="padding-left: 15px; padding-right: 15px; font-size: 20px; font-weight: 900;">  Event Name  ( Football) </span>
+    <button mat-mini-fab  color="default" aria-label="Example icon button with a home icon">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+  <div style="padding: 30px;">
+    <div class="row">
+      <div class="col-7">
+        <div class="list-group">
+          <a href="#" class="list-group-item active waves-light"
+            style="text-align: center;background-color: #252524;border-color: #252525;" mdbWavesEffect>
+            Upcoming Matches
+          </a>
+          <a href="#" class="list-group-item list-group-item-action waves-light" *ngFor=" let item of upcomingMatchs" style="text-align: center;padding-top: 25px; padding-bottom: 25px;">
+            <div class="row">
+              <div class="col-6" style="text-align: center;">
+                  <span>
+                    <img width="110" height="119" style="max-height: 32px;width: auto;vertical-align: middle;"
+                      src="{{item.firstMathcIcon}}"
+                      alt="" sizes="(max-width: 110px) 100vw, 110px">
+                  </span>
+                  <span style="color:#3d3d3d;margin-left: 15px;margin-right: 15px;font-size: 16px !important;font-weight: 600 !important;">{{item.firstMatch}}</span>
+                  <span style="margin-right: 15px;font-size: 20px !important;font-weight: 600 !important;">
+                    <a style="color: #c3002f !important;text-decoration: none !important;">
+                      VS
+                    </a>
+                  </span>
+                  <span style="color:#3d3d3d;margin-right: 15px;font-size: 16px !important;font-weight: 600 !important;">{{item.scondMatch}}</span>
+                  <span class="bigslam-sp-team-logo">
+                    <img width="90" height="89" style="max-height: 32px;width: auto;vertical-align: middle;" src="{{item.secondMathcIcon}}" alt="" sizes="(max-width: 90px) 100vw, 90px">
+                  </span>
+              </div>
+              <div class="col-6" style="text-align: center;line-height: 1.7;text-transform: none;font-size: 15px;color: black;color: #3d3d3d;">
+                  <span class="bigslam-sp-event-date">{{item.date}} /   </span>
+                  <span>
+                   {{item.venu}}
+                  </span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action waves-light view-more" style="background-color: #e31b23 !important;" mdbWavesEffect>
+            View More
+          </a>
+        </div>
+      </div>
+      <div class="col-4" style="padding-left: 40px;">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action waves-light view-more" style="background-color: #e31b23 !important;" mdbWavesEffect>
+            Latest Results
+          </a>
+          <a href="#" class="list-group-item list-group-item-action waves-light" *ngFor=" let item of latestResult">
+            <div class="row">
+              <div class="col-12" style="text-align: center;">
+
+                  <span style="color:#3d3d3d;margin-left: 15px;margin-right: 15px;font-size: 16px !important;font-weight: 600 !important;"> {{item.firstMatch}}</span>
+                  <span>
+                    <img width="110" height="119" style="max-height: 32px;width: auto;vertical-align: middle;"
+                    src="{{item.firstMathcIcon}}"
+                      alt="" sizes="(max-width: 110px) 100vw, 110px">
+                  </span>
+                  <span style="margin-right: 15px;font-size: 20px !important;font-weight: 600 !important;">
+                    <a style="color: #c3002f !important;text-decoration: none !important;">
+                     {{item.firstMatchScore}} -  {{item.secondMatchScore}}
+                    </a>
+                  </span>
+                  <span class="bigslam-sp-team-logo">
+                    <img width="90" height="89" style="max-height: 32px;width: auto;vertical-align: middle;" src="{{item.secondMathcIcon}}" alt="" sizes="(max-width: 90px) 100vw, 90px">
+                  </span>
+                  <span style="color:#3d3d3d;margin-right: 15px;font-size: 16px !important;font-weight: 600 !important;"> {{item.scondMatch}}</span>
+
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col-12" style="text-align: center;line-height: 1.7;text-transform: none;font-size: 15px;color: black;color: #3d3d3d;">
+                {{item.date}}  /  {{item.venu}}
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action waves-light"
+          style="text-align: center; color:white; background-color: #252524!important;;border-color: #252525;" mdbWavesEffect>
+          View More
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

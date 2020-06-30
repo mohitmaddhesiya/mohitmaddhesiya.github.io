@@ -1,0 +1,124 @@
+<div
+  style="padding-top: 40px; background-image: url(assets/upcoming-events/bg-Latest-hp2.jpg);">
+  <div class="text-center">
+    <h3 style="font-size: 32px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #f3f3f3;">Upcoming
+      Events <span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+    <hr style="border-top: 4px solid #e31b23;width: 11% !important;margin-top:0px;margin-bottom: 0rem !important;">
+  </div>
+
+  <section class="text-center pb-3 my-5">
+
+    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+      [animation]="'slide'">
+      <mdb-carousel-item *ngFor="let item of slides; let i = index">
+        <div class="row pb-2" *ngFor="let card of item; let cardIndex = index">
+          <div style="max-width: 20rem;margin-left: 50px;">
+            <section>
+              <ul class="header text">
+                <span>188 <small>days</small></span> <span> 19 <small>hrs</small></span> <span> 36
+                  <small>mins</small></span> <span> {{timeLeft}} <small>secs</small></span> </ul>
+              <div class="tab-content card">
+                <!--Panel 1-->
+                <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                  <mdb-card style="background: #f3f3f3 !important">
+                    <!--Card image-->
+
+                    <!--Card content-->
+                    <mdb-card-body>
+                      <!--Title-->
+                      <mdb-card-title>
+                        <h4
+                          style="padding-top: 14px;padding-top: 14px;font-size: 22px;font-family: serif;font-weight: bold;">
+                          Football Under 20</h4>
+                      </mdb-card-title>
+                      <img
+                        src="assets/upcoming-events/football.png">
+                      <!--Text-->
+                      <mdb-card-text>
+                        <span>
+                          Some quick example text to build on the card title and make up the bulk of the
+                          card's
+                          content.
+                        </span>
+
+                      </mdb-card-text>
+                      <div>
+                        <div>
+                          <span class="material-icons">
+                            calendar_today
+                          </span>
+                        </div>
+                        <div style="padding-bottom: 10px;font-size: 16px;font-family: serif;font-weight: bold;">
+                          August 15, 2020
+                        </div>
+                      </div>
+                    </mdb-card-body>
+                  </mdb-card>
+                </div>
+                <!--/.Panel 1-->
+              </div>
+              <ul class="header1" (click)="onClickRegistration()">
+                <span>
+                  Registation now
+                </span>
+              </ul>
+            </section>
+
+          </div>
+          <div style="max-width: 20rem;margin-left: 50px;">
+            <section>
+              <ul class="header text">
+                <span>188 <small>days</small></span> <span> 19 <small>hrs</small></span> <span> 36
+                  <small>mins</small></span> <span> {{timeLeft}} <small>secs</small></span> </ul>
+              <div class="tab-content card">
+                <!--Panel 1-->
+                <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                  <mdb-card style="background: #f3f3f3 !important">
+                    <!--Card image-->
+
+                    <!--Card content-->
+                    <mdb-card-body>
+                      <!--Title-->
+                      <mdb-card-title>
+                        <h4
+                          style="padding-top: 14px;padding-top: 14px;font-size: 22px;font-family: serif;font-weight: bold;">
+                          VollyBall Under 20</h4>
+                      </mdb-card-title>
+                      <img src="assets/upcoming-events/rugbe.png">
+                      <!--Text-->
+                      <mdb-card-text>
+                        <span>
+                          Some quick example text to build on the card title and make up the bulk of the
+                          card's
+                          content.
+                        </span>
+
+                      </mdb-card-text>
+                      <div>
+                        <div>
+                          <span class="material-icons">
+                            calendar_today
+                          </span>
+                        </div>
+                        <div style="padding-bottom: 10px;font-size: 16px;font-family: serif;font-weight: bold;">
+                          August 25, 2020
+                        </div>
+                      </div>
+                    </mdb-card-body>
+                  </mdb-card>
+                </div>
+                <!--/.Panel 1-->
+              </div>
+              <ul class="header1" (click)="onClickRegistration()">
+                <span>
+                  Registation now
+                </span>
+              </ul>
+            </section>
+
+          </div>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </section>
+</div>
